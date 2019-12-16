@@ -14,7 +14,7 @@
       var hand_choki=1;
       var hand_pa=2;
       // ハンド表示用配列
-      var hand_text = ["ぐー", "ちょき", "ぱー"];
+      var hand_text = ["グー", "チョキ", "パー"];
       // 勝敗判定用変数（定数）
       var judge_win=0;
       var judge_draw=1;
@@ -57,9 +57,9 @@
         // 勝敗判定
         result = judge[player_hand][comp_hand];
         // 結果表示
-        msg="player:"+hand_text[player_hand]+"<br>"+
-            "comp:"+hand_text[comp_hand]+"<br>"+
-            "結果:" + judge_text[result];
+        msg="player: "+hand_text[player_hand]+"<br>"+
+            "comp: "+hand_text[comp_hand]+"<br>"+
+            "結果: " + judge_text[result];
         $("#result").html(msg);
         // 勝敗ごとの処理
         if(result == judge_win) {
@@ -128,9 +128,9 @@
   <h1 class="text-white bg-primary">じゃんけん 連勝チャレンジ！</h1>
   <div id="highscore" class="text-white bg-secondary"></div>
   <div class="mx-auto" style="width: 200px">
-    <a onclick="gu();" class="btn btn-outline-primary hand" role="button">ぐー</a>
-    <a onclick="choki();" class="btn btn-outline-primary hand" role="button">ちょき</a>
-    <a onclick="pa();" class="btn btn-outline-primary hand" role="button">ぱー</a>
+    <a onclick="gu();" class="btn btn-outline-primary hand" role="button">グー</a>
+    <a onclick="choki();" class="btn btn-outline-primary hand" role="button">チョキ</a>
+    <a onclick="pa();" class="btn btn-outline-primary hand" role="button">パー</a>
     <a onclick="newgame();" class="btn btn-info text-white" id="newgame" role="button">New Game</a>
   </div>
   <div id="result" class="text-white bg-secondary">
